@@ -13,10 +13,11 @@ body:
   - type: input
     id: name
     attributes:
+      label: Feature name
       description: The name of the feature
       placeholder: Type feature here
-      validations:
-        required: true
+    validations:
+      required: true
   - type: textarea
     id: desc
     attributes: 
@@ -28,7 +29,6 @@ body:
     attributes:
       label: Objects
       multiple: true
-      required: true
       description: All the Objects to consider for this feature
       options:
         - Followers
@@ -36,6 +36,8 @@ body:
         - Images
         - Comments
         - Likes
+    validations:
+      required: true
   - type: checkboxes
     attributes:
       label: Please confirm before submitting
