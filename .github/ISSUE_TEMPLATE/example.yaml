@@ -1,0 +1,43 @@
+name: User Story
+description: Request a new feature.
+title: "Feature Request: "
+labels: ["enhancement"]
+assignees:
+  - giancarlopernudisegura
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for submitting a feature request. This can help improve our software.
+        ![The cat thanks you!](https://c.tenor.com/ZhfMGWrmCTcAAAAM/cute-kitty-best-kitty.gif)
+  - type: input
+    id: name
+    description: The name of the feature
+    placeholder: Type feature here
+    validations:
+      required: true
+  - type: textarea
+    id: desc
+    attributes: 
+      label: Description of the feature
+    validations:
+      required: true
+  - type: dropdown
+    id: affects
+    attributes:
+      label: Objects
+      multiple: true
+      required: true
+      description: All the Objects to consider for this feature
+      options:
+        - Followers
+        - Posts
+        - Images
+        - Comments
+        - Likes
+  - type: checkbox
+    attributes:
+      label: Please confirm before submitting
+      options:
+          - label: Have you checked that this feature has not already been requested?
+            required: true
