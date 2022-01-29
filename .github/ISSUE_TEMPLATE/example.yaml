@@ -12,10 +12,11 @@ body:
         ![The cat thanks you!](https://c.tenor.com/ZhfMGWrmCTcAAAAM/cute-kitty-best-kitty.gif)
   - type: input
     id: name
-    description: The name of the feature
-    placeholder: Type feature here
-    validations:
-      required: true
+    attributes:
+      description: The name of the feature
+      placeholder: Type feature here
+      validations:
+        required: true
   - type: textarea
     id: desc
     attributes: 
@@ -35,7 +36,7 @@ body:
         - Images
         - Comments
         - Likes
-  - type: checkbox
+  - type: checkboxes
     attributes:
       label: Please confirm before submitting
       options:
